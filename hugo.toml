@@ -1,0 +1,83 @@
+baseURL = 'https://cartercanedy.github.io/'
+languageCode = 'en-us'
+title = "Carter Canedy's Portfolio"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+enableThemeToggle = true
+
+# Subtitle for home
+homeSubtitle = "Husband & Father of 2 | Software Engineer | Scientist"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+
+# Metadata mostly used in document's head
+description = "My portfolio and blog site"
+keywords = "homepage, blog, portfolio"
+images = [""]
+
+[params.author]
+name = "Carter Canedy"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/cartercanedy"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/carter-canedy-275a4b167/"
+
+[params.footer]
+trademark = 2024
+copyright = true
+author = true
+
+topText = []
+bottomText = [
+  "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+]
+
+[taxonomies]
+category = "blog, portfolio"
+tag      = "software, development, science, scientist"
+
+[languages]
+[languages.en]
+title = "Carter Canedy"
+keywords = "blog, portfolio, homepage"
+copyright = '<a href="https://choosealicense.com/licenses/mit/" rel="noopener">Open-source under the MIT license</a>'
+readOtherPosts = "Read other posts"
+
+[languages.en.params.logo]
+logoText = "Carter Canedy"
+logoHomeLink = "/"
+# or
+#
+# path = "/img/your-example-logo.svg"
+# alt = "Your example logo alt text"
+
+# And you can even create generic menu
+[[menu.main]]
+identifier = "blog"
+name       = "Blog"
+url        = "/posts"
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+
